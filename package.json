@@ -1,0 +1,27 @@
+{
+  "name": "server-taski",
+  "version": "1.0.0",
+  "description": "API for taski app",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.5",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljaviertovar/server-taski.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ljaviertovar/server-taski/issues"
+  },
+  "homepage": "https://github.com/ljaviertovar/server-taski#readme"
+}
