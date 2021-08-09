@@ -2,14 +2,20 @@ const express = require('express');
 const connectDB = require('./config/db');
 
 const app = express();
+// connect DB 
 connectDB();
 
+// enable json 
+app.use(express.json({extended: true}));
+
+// app PORT 
 const PORT = process.env.PORT || 4000;
 
-app.get('/', (req, res) => {
-    res.send('Hello world');
-});
+// routes 
+app.use('/api/users', require('./routes/users'));
 
+
+// run app 
 app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`);
 });
